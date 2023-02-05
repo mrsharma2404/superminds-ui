@@ -1,0 +1,306 @@
+.wrapper {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+  height: auto;
+  padding: 0px 85px;
+  max-width: 1800px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rightBox {
+  width: 33.33%;
+}
+.mainLabel {
+  display: flex;
+  flex-direction: row;
+  width: 33.33%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+.viewAllLabel {
+  display: flex;
+  flex-direction: row;
+  width: 33.33%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.imagesWrapper {
+  display: flex;
+  flex-direction: row;
+}
+.imagesContainer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  min-height: 615px;
+}
+
+.leftImageWrapper {
+  margin-left: 65px;
+  margin-top: 100px;
+  display: flex;
+  position: absolute;
+  transform: rotate(-18deg);
+  width: 35.4%;
+}
+.leftImageBox {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  opacity: 0.5;
+}
+
+.leftImage {
+  width: 100%;
+  height: 450px;
+  opacity: 0.5;
+}
+.middleImageWrapper {
+  margin-left: 29.8%;
+  display: flex;
+  position: relative;
+  width: 40.5%;
+}
+.middleImageContainer {
+  width: 100%;
+}
+
+.middleImageBox {
+  position: relative;
+  width: 100%;
+  height: 555px;
+  z-index: 2;
+}
+
+.middleImage {
+  width: 100%;
+  height: 555px;
+}
+.contentBox {
+  z-index: 3;
+  width: 100%;
+  margin-top: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  height: 226px;
+  background: linear-gradient(
+    179.6deg,
+    rgba(0, 0, 0, 0) 4.52%,
+    #000000 37.22%,
+    #000000 96.19%
+  );
+  opacity: 0.68;
+  padding: 15px 35px;
+  color: #ffffff;
+}
+.middleLable {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.smallLabel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.bookNowButtonContainer {
+  width: 100%;
+  z-index: 10 !important;
+  display: flex;
+  position: absolute;
+  margin-top: 490px;
+  justify-content: flex-end;
+  justify-self: right;
+}
+.bookNowButton {
+  width: 146px;
+  height: 45.9px;
+  background: #fbd07a;
+  border-radius: 10px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  color: #000000;
+}
+.rightImageWrapper {
+  margin-left: 60%;
+  margin-top: 100px;
+  display: flex;
+  position: absolute;
+  transform: rotate(18deg);
+  width: 35.4%;
+}
+.rightImageBox {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  opacity: 0.5;
+}
+
+.rightImage {
+  width: 100%;
+  height: 450px;
+  opacity: 0.5;
+}
+.bottomConatiner {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0px;
+  }
+  .leftImageWrapper {
+    margin-left: -50px;
+    min-width: 450px;
+  }
+  .middleImageWrapper {
+    margin-left: 25.6%;
+    min-width: 510px;
+  }
+  .rightImageWrapper {
+    min-width: 450px;
+  }
+  .imagesContainer {
+    margin-top: 50px;
+  }
+  .rightBox {
+    display: none;
+  }
+  .mainLabel {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .viewAllLabel {
+    display: none;
+  }
+  .bottomConatiner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .viewAllButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98.6px;
+    height: 31px;
+    border: 1px solid #fbd07a;
+    border-radius: 6.75323px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px;
+  }
+  .imagesContainer {
+    margin-top: 50px;
+    min-height: 300px;
+  }
+  .leftImageWrapper {
+    margin-top: 55px;
+    margin-left: -30%;
+    width: 60%;
+    min-width: 200px;
+  }
+  .leftImageBox {
+    position: relative;
+    height: 225px;
+  }
+
+  .leftImage {
+    height: 225px;
+  }
+  .middleImageWrapper {
+    margin-left: 16.67%;
+    width: 66.66%;
+    height: 270px;
+    min-width: 200px;
+  }
+  .middleImageBox {
+    height: 270px;
+  }
+  .middleImage {
+    height: 270px;
+  }
+  .contentBox {
+    margin-top: 160px;
+    height: 110px;
+    padding: 15px 17px;
+  }
+
+  .middleLable {
+    font-size: 12.246px;
+    line-height: 20px;
+  }
+  .smallLabel {
+    font-size: 8.81715px;
+    line-height: 20px;
+  }
+
+  .bookNowButtonContainer {
+    margin-top: 230px;
+  }
+  .bookNowButton {
+    width: 71.52px;
+    height: 22.49px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 9.30699px;
+    line-height: 11px;
+  }
+
+  .rightImageWrapper {
+    margin-top: 55px;
+    margin-left: 70%;
+    width: 60%;
+    min-width: 200px;
+  }
+  .rightImageBox {
+    position: relative;
+    height: 225px;
+  }
+
+  .rightImage {
+    height: 225px;
+  }
+}

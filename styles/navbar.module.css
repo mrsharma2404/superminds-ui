@@ -1,0 +1,151 @@
+.navbarWrapper {
+  height: 103px;
+  width: auto;
+  background: #270f33;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  backface-visibility: hidden;
+  z-index: 111;
+}
+.navbarContainer {
+  max-width: 1800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 85px;
+  overflow-x: hidden;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoContainer {
+  width: 76px;
+  height: 77.96px;
+  position: relative;
+}
+.logoImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.searchContainer {
+  margin-left: 120px;
+}
+.searchInput {
+  width: 338px;
+  height: 35px;
+  border: 1px solid #d1d0d0;
+  filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.25));
+  border-radius: 26px;
+  padding-left: 27px;
+  background-color: transparent;
+}
+.rightContainer {
+  display: flex;
+  /* position: relative; */
+}
+.searchIconContainer {
+  display: none;
+}
+.searchIcon {
+  display: none;
+}
+.menuIconContainer {
+  display: none;
+}
+.menuIcon {
+  display: none;
+}
+.menuItemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-self: right;
+}
+.menuItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  background: #fbd07a;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #270f33;
+  padding: 0px 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.dropdown {
+  margin-top: 30px;
+  width: 132px;
+  height: auto;
+  background: #fbd07a;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  margin-left: -70px;
+}
+.mobileMenuItem {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .menuItemContainer {
+    display: none;
+  }
+  .menuIconContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 35px;
+    height: 25px;
+  }
+  .menuIcon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .navbarWrapper {
+    height: 88px;
+  }
+  .navbarContainer {
+    padding: 0px 25px;
+  }
+  .logoContainer {
+    width: 76px;
+    height: 77.96px;
+    position: relative;
+  }
+  .searchContainer {
+    display: none;
+  }
+  .menuIconContainer {
+    width: 22px;
+    height: 16px;
+  }
+  .searchIconContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
+  }
+  .searchIcon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}

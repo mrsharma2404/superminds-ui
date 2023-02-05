@@ -1,0 +1,104 @@
+.basicCardWrapper {
+  width: 333px;
+  border-radius: 50px 0px 0px 50px;
+}
+.basicCardImageContainer {
+  display: flex;
+  position: relative;
+  width: 333px;
+  height: auto;
+  border-radius: 50px 0px 0px 0px;
+}
+.basicCardImage {
+  width: 333px;
+  height: 450px;
+  border-radius: 50px 0px 0px 0px;
+}
+.contentContainer {
+  width: 333px;
+  height: auto;
+  background: #270f33;
+  border-radius: 0px 0px 50px 0px;
+  color: #fff;
+  padding: 22px;
+}
+.heading {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  min-height: 52px;
+}
+.content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 5px;
+  min-height: 100px;
+}
+.description1 {
+  margin-bottom: 10px;
+}
+.ticketDetails {
+  display: flex;
+  flex-direction: row;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.detailIcon,
+.currencyIcon,
+.watchIcon,
+.calendarIcon {
+  display: flex;
+  position: relative;
+  margin-right: 5px;
+  text-align: center;
+  align-items: center;
+}
+.currencyIcon {
+  margin: 0px 2px 0px 10px;
+}
+.watchIcon {
+  margin: 0px 7px 0px 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bottomContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98.6px;
+  height: 31px;
+  background: #fbd07a;
+  border-radius: 6.75323px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .basicCardWrapper {
+    width: 100%;
+  }
+  .basicCardImageContainer {
+    width: 100%;
+  }
+  .basicCardImage {
+    width: 100%;
+  }
+  .contentContainer {
+    width: 100%;
+  }
+}

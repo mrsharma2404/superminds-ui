@@ -1,0 +1,235 @@
+.footerWrapper {
+  height: 350px;
+  width: auto;
+  background: #270f33;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerContainer {
+  max-width: 1800px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 85px;
+  overflow-x: hidden;
+}
+.leftContainer {
+}
+.emailContainer {
+  height: 222px;
+  border: 3px solid #fbd07a;
+  border-radius: 19px;
+  padding: 50px 100px;
+}
+.emailLable {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.emailInputContainer {
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+.emailInput {
+  width: 541px;
+  height: 75px;
+  background: #ffffff;
+  border-radius: 7px;
+  padding-left: 20px;
+  padding-right: 150px;
+}
+.submitButton {
+  width: 104px;
+  height: 45.04px;
+  background: #fbd07a;
+  border-radius: 8.18898px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 15px 422px;
+}
+.labelMedium {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.labelSmall {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.messageIcon {
+  width: 25px;
+  height: 18px;
+  position: relative;
+  margin-right: 10px;
+}
+.phoneIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  margin-right: 10px;
+}
+.socialMediaicon {
+  margin-right: 10px;
+  margin-left: 0px;
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 1024px) {
+  .footerContainer {
+    padding: 0px 50px;
+  }
+  .emailContainer {
+    height: 160px;
+    border: 3px solid #fbd07a;
+    border-radius: 13px;
+    padding: 35px 75px;
+  }
+  .emailInputContainer {
+    margin-top: 10px;
+  }
+  .emailInput {
+    width: 380px;
+    height: 55px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 120px;
+  }
+  .submitButton {
+    width: 75px;
+    height: 32px;
+    border-radius: 5.8px;
+    margin: 12px 292px;
+    font-size: 12.9086px;
+    line-height: 15px;
+  }
+  .emailLable {
+    font-size: 17.2114px;
+    line-height: 20px;
+  }
+  .labelMedium {
+    font-size: 17.2114px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .labelSmall {
+    font-weight: 400;
+    font-size: 8.60571px;
+  }
+  .messageIcon {
+    width: 18px;
+    height: 12px;
+    position: relative;
+    margin-right: 10px;
+  }
+  .phoneIcon {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-right: 10px;
+  }
+  .socialMediaicon {
+    margin-right: 10px;
+    margin-left: 0px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    padding: 0px 25px;
+  }
+  .leftContainer {
+    width: 100%;
+  }
+  .emailContainer {
+    height: 96.79px;
+    border: 1.308px solid #fbd07a;
+    border-radius: 8.284px;
+    padding: 20px 45px;
+    width: 100%;
+  }
+  .emailInputContainer {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .emailInput {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 90px;
+  }
+  .submitButton {
+    width: 45px;
+    height: 20px;
+    border-radius: 3.8px;
+    margin-top: 6px;
+    margin-left: calc(100% - 51px);
+    font-size: 7.848px;
+    line-height: 9px;
+  }
+  .emailLable {
+    font-size: 7.848px;
+    line-height: 9px;
+  }
+  .rightContainer {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .labelMedium {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+  .labelSmall {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .messageIcon {
+    width: 16px;
+    height: 12px;
+    position: relative;
+    margin-right: 10px;
+  }
+  .phoneIcon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    margin-right: 10px;
+  }
+  .socialMediaicon {
+    margin-left: 10px;
+  }
+}
