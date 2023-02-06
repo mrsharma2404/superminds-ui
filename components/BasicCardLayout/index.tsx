@@ -6,20 +6,22 @@ import { data } from "@/services/data";
 const BasicCardLayout = () => {
   return (
     <div className={style.wrapper}>
-      <div className={style.header}>
-        <div className={style.rightBox}></div>
-        <div className={style.mainLabel}>
-          {` What's On At Glasgow's Coolest Event Space.`}
+      <div className={style.container}>
+        <div className={style.header}>
+          <div className={style.rightBox}></div>
+          <div className={style.mainLabel}>
+            {` What's On At Glasgow's Coolest Event Space.`}
+          </div>
+          <div className={style.viewAllLabel}>View All</div>
         </div>
-        <div className={style.viewAllLabel}>View All</div>
-      </div>
-      <div className={style.basicCards}>
-        {data.map((card, index) => {
-          return <BasicCard key={index} card={card} />;
-        })}
-      </div>
-      <div className={style.bottomConatiner}>
-        <div className={style.viewAllButton}> View All </div>
+        <div className={style.basicCards}>
+          {data.map((card, index) => {
+            return <BasicCard key={index} card={card} />;
+          })}
+        </div>
+        <div className={style.bottomConatiner}>
+          <div className={style.viewAllButton}> View All </div>
+        </div>
       </div>
     </div>
   );

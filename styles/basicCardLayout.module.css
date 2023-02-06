@@ -1,6 +1,19 @@
 .wrapper {
-  padding: 85px;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.container {
+  width: 100vw;
+  height: auto;
+  padding: 85px;
+  max-width: 1440px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -56,7 +69,7 @@
   }
 }
 @media (max-width: 768px) {
-  .wrapper {
+  .container {
     padding: 20px;
   }
   .basicCards {

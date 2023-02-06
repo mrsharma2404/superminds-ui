@@ -1,0 +1,123 @@
+/* .wrapper {
+  width: 100%;
+  padding: 10px 85px 80px 85px;
+}
+.container {
+  width: 100%;
+} */
+
+.wrapper {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+  height: auto;
+  padding: 10px 6% 80px 6%;
+  max-width: 1440px;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rochester";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 64px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.leftContainer {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  background: #fbd07a;
+  padding: 2%;
+  border-radius: 32% 0px 0px 0px;
+  width: 60%;
+}
+.leftImageContainer {
+  aspect-ratio: 4 / 2.4;
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-radius: 32% 0px 0px 0px;
+  overflow: hidden;
+}
+.leftImage {
+  border-radius: 32% 0px 0px 0px;
+}
+.rightImageHeading {
+  font-family: "Rochester";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 64px;
+  color: #000000;
+  aspect-ratio: 16/5;
+  width: 60%;
+  margin-left: 37%;
+}
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  width: 60%;
+}
+.rightImageWrapper {
+  background: #003831;
+  padding: 3%;
+  border-radius: 0px 0px 32% 0px;
+}
+.rightImageContainer {
+  aspect-ratio: 4 / 2.5;
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-radius: 0px 0px 32% 0px;
+}
+.rightImage {
+  border-radius: 0px 0px 32% 0px;
+}
+
+@media (max-width: 1024px) {
+  .rightImageHeading {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 40%;
+  }
+  .heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .rightImageHeading {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .heading {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,39 @@
+.wrapper {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+  height: auto;
+  padding: 85px;
+  max-width: 1440px;
+}
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 12 / 7;
+  position: relative;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+}
