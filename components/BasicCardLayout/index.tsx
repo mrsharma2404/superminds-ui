@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import style from "@/styles/basicCardLayout.module.css";
 import BasicCard from "../BasicCard";
@@ -10,13 +9,13 @@ const BasicCardLayout = () => {
       <div className={style.header}>
         <div className={style.rightBox}></div>
         <div className={style.mainLabel}>
-          What's On At Glasgow's Coolest Event Space.
+          {` What's On At Glasgow's Coolest Event Space.`}
         </div>
         <div className={style.viewAllLabel}>View All</div>
       </div>
       <div className={style.basicCards}>
         {data.map((card, index) => {
-          return <BasicCard card={card} />;
+          return <BasicCard key={index} card={card} />;
         })}
       </div>
       <div className={style.bottomConatiner}>

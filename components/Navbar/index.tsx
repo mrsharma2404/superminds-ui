@@ -55,13 +55,21 @@ const Navbar = () => {
           {showDropdown && (
             <div className={style.dropdown}>
               {menuItems.map((item, index) => {
-                return <div className={style.mobileMenuItem}>{item}</div>;
+                return (
+                  <div key={index} className={style.mobileMenuItem}>
+                    {item}
+                  </div>
+                );
               })}
             </div>
           )}
           <div className={style.menuItemContainer}>
             {menuItems.map((item, index) => {
-              return <div className={style.menuItems}>{item}</div>;
+              return (
+                <div key={index} className={style.menuItems}>
+                  {item}
+                </div>
+              );
             })}
           </div>
         </div>
