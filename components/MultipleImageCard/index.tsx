@@ -56,19 +56,23 @@ const MultipleImageCard = () => {
         </div>
         <div className={style.container}>
           <div className={style.content}>
-            A one-stop cabaret lounge in the heart of Merchant City, 18
+            {`  A one-stop cabaret lounge in the heart of Merchant City, 18
             Candleriggs (formerly known as Wild Cabaret) knows no bounds when it
-            comes to unique dabbles, daring nights and dashing shows. <br />{" "}
-            <br /> Echoing its eccentric entertainment, the decor is markedly
+            comes to unique dabbles, daring nights and dashing shows. `}
+            <br />
+            <br />
+            {`Echoing its eccentric entertainment, the decor is markedly
             Art Deco. Gilded in gold, with a bar boasting its name up in
             Hollywood-style lights, these two spaces epitomize showbiz and
             glistening sass. Sashay down to a table of baroque seats and let the
-            show commence. <br /> <br /> Events are the name of the game at 18
+            show commence. `}
+            <br /> <br />
+            {`Events are the name of the game at 18
             Candelriggs, where live music and cabaret reign supreme. From
             burlesque shows and circus troupes to comedy nights and luxe shows,
             it's at the top of its game when it comes to providing guests with a
             wholly unique drinking and dining experience in the city. Top hats?
-            Sparkles? And feather boas? These all come as standard.
+            Sparkles? And feather boas? These all come as standard.`}
           </div>
         </div>
       </div>
